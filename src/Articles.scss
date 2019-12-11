@@ -1,0 +1,51 @@
+$ArticlePadding: 70px;
+
+.ArticlesWrapper {
+  display: grid;
+  grid-template-columns: 200px 1fr;
+  column-gap: 15px;
+  margin-left: $ArticlePadding;
+  margin-right: $ArticlePadding;
+  margin-top: 20px;
+  background-color: #fff;
+  box-shadow: 0px 0px 7px 2px rgba(0, 0, 0, 0.13);
+  padding: 40px;
+}
+.ArticlePicture {
+  width: 100%;
+  height: auto;
+}
+.ArticleText {
+  font-family: tahoma;
+  font-size: 14px;
+  color: rgb(107, 103, 103);
+}
+
+.ArticleTitle {
+  margin-bottom: 20px;
+  font-weight: 500;
+  font-family: tahoma;
+  font-size: 18px;
+  color: rgb(107, 103, 103);
+}
+
+.ArticleFooter {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 100px;
+  margin-top: 30px;
+  font-family: tahoma;
+  color: rgb(151, 148, 148);
+  font-size: 12px;
+}
+.ArticleContent {
+  display: flex;
+  flex-direction: column;
+  align-items: space-between;
+}
+
+.FooterHeader {
+  font-weight: 500;
+  color: rgb(85, 75, 75);
+  display: inline-block;
+}
