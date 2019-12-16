@@ -37,7 +37,7 @@ class FilterMenu extends React.Component {
         <div>
           <input className="FilterMenuSearch" placeholder="Поиск статьи" type="text" onChange={this.setText.bind(this)}/>
         </div>
-        <div>
+        <div className="DropDown">
           <ul
             className="Menu"
             onClick={this.toggleDropdown.bind(this, "SortDropped")}
@@ -48,7 +48,7 @@ class FilterMenu extends React.Component {
                 <div className="MenuArrow"></div>
               </div>
               <ul
-                className="Submenu"
+                className="Submenu Z2"
                 style={{ display: this.state.SortDropped ? "block" : "" }}
               >{this.props.Data.SortTypes.map(SortType=>( <li  onClick={this.setSort.bind(this)}>{SortType.display}</li>))}
                 
@@ -56,7 +56,7 @@ class FilterMenu extends React.Component {
             </li>
           </ul>
         </div>{" "}
-        <div>
+        <div className="DropDown">
           <ul
             className="Menu"
             onClick={this.toggleDropdown.bind(this, "CategoryDropped")}
@@ -67,7 +67,7 @@ class FilterMenu extends React.Component {
                 <div className="MenuArrow"></div>
               </div>
               <ul
-                className="Submenu"
+                className="Submenu Z1"
                 style={{ display: this.state.CategoryDropped ? "block" : "" }}
               ><li onClick={this.setCategory.bind(this)}>
               Все статьи
